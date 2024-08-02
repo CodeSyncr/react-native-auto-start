@@ -60,7 +60,8 @@
   },
   "homepage": "https://github.com/CodeSyncr/react-native-auto-start#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.0.2",
