@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-auto-start';
+import { getAutoStartPermission } from 'react-native-auto-start';
 
 export default function App() {
-  const [result, setResult] = useState<number | undefined>();
+  const [result, setResult]: any = useState<number | undefined>();
 
   useEffect(() => {
-    multiply(3, 7).then(setResult);
+    getAutoStartPermission();
+    setResult('hello');
   }, []);
 
   return (
